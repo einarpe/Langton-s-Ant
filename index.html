@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<title>Langton's ant</title>
+		<link rel="stylesheet" href="css/style.css" />
+    
+    <script src="js/sdt.js" type="text/javascript"></script>
+    <script src="js/mootools-1.2.1-core.js" type="text/javascript"></script>
+    <script src="js/area.js" type="text/javascript"></script>
+		<script src="js/ant3.js" type="text/javascript"></script>
+    <script src="js/table.js" type="text/javascript"></script>
+    <script src="js/scripting.js" type="text/javascript"></script>
+		
+	</head>
+<body><div id="wrapper">
+	
+    <div id="top">
+  		<h1>Langton's ant</h1>
+    </div>
+    <div id="content">
+    
+      <div id="config">
+        <form id="frmconfig" action="">
+        <fieldset><legend id="showcloseform">Config</legend><div id="frmwrapper">
+          <div id="antselect" class="sect">
+            <label for="ants">Ants:</label>
+            <!-- list of ants on area -->
+            <select id="ants" name="ants">
+              <option value="2x3x3">(2,3) top</option>
+            </select>
+            
+            <input type="button" value="Add ant" class="button" id="addant" />
+            
+            <!-- adding ant form -->
+            <fieldset id="fdsaddant"><legend>Adding ant</legend>
+              <div class="sect">
+                <label for="antposx">X position of ant</label>
+                <input id="antposx" name="aposx" value="0" type="text" class="text" />
+              </div>
+              
+              <div class="sect">
+                <label for="antposy">X position of ant</label>
+                <input id="antposy" name="aposy" value="0" type="text" class="text" />
+              </div>
+              
+              <div class="sect">
+                <label for="antdir">Starting direction</label>
+                <select id="antdir" name="antdir">
+                  <option value="0">Top</option>
+                  <option value="1">Left</option>
+                  <option value="2">Bottom</option>
+                  <option value="3">Right</option>
+                </select>
+              </div>
+              
+              <input type="button" value="Add it" id="addantsubmit" />
+              <input type="button" value="Cancel" id="addantcancel" />
+              
+            </fieldset>
+            <input type="button" value="Remove ant" class="button" id="removeant" />
+          </div>
+          <!-- width and height settings -->
+          <div class="sect"><label for="awidth">Area width</label><input type="text" maxlength="2" value="10" id="awidth" name="width" class="text" /></div>
+          <div class="sect"><label for="aheight">Area height</label><input type="text" maxlength="2" value="10" id="aheight" name="height" class="text" /></div>
+          
+          <div><input type="submit" class="button" value="Set &amp; restart" id="configset"/></div>
+        </div></fieldset>
+      </form>
+      </div>
+      
+      <div id="area">
+        <!-- main table -->
+        <table id="tant" border="0" cellpadding="0" cellspacing="0"><tr><td></td></tr></table>
+      </div>
+      
+      <div id="clr"></div>
+      
+      <br/>
+      <span id="iter"></span>
+      <br />
+      <input id="ctrl" type="button" value=" &gt; " />
+      
+      <select id="delay">
+        <option value="1">as fast as can</option>
+        <option value="50" selected="selected">cheetah</option>
+        <option value="200">faster</option>
+        <option value="500">medium</option>
+        <option value="1000">slow</option>
+      </select>
+      
+      <br />
+      
+      <input id="next" type="button" value="Next" />
+		
+    </div>
+    
+    <div id="footer">
+      written by <a href="http://kubarek.info">kubarek</a>, 2009. <a href="">GPL</a> licence
+    </div>
+    
+</div></body>
+</html>

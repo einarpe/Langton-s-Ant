@@ -1,0 +1,174 @@
+/*
+ * Langton's ant
+ * style
+ */
+		  body{
+		    font-family: Verdana, Geneva, Arial, Helvetica, sans-serif;
+        color: #FFDD3F;
+        background: #1C1B1F;
+		  }
+      
+      #wrapper {
+        margin: 0 auto;
+      }
+      
+      h1 {
+        letter-spacing: 2px;
+        font-size: 1.7em;
+        margin: 5px 0;
+      }
+      
+      a {
+        color: #FFB93F;
+      }
+      
+      #top {
+        border-bottom: 1px dotted #8FDF37;
+      }
+      
+      #top, #footer {
+        width: 400px;
+        text-align: center;
+      }
+      
+      #content {
+        padding: 10px;
+      }
+      
+      #tant {
+        margin: 5px 2px;
+        padding: 2px;
+        border: 1px solid #C4EF95;
+        border-collapse: collapse;
+      }
+      
+      .clr {
+        clear: both;
+      }
+      
+			td {
+				border: 1px solid #E3EFB3;
+				width: 20px;
+				height: 21px;
+        font-size: 1em;
+        
+			}
+      
+      .c_white {
+        background: #fff;
+      }
+      
+      .c_black {
+        background: #000;
+      }
+      
+      .c_ant {
+        background-image: url("../gfx/ant.gif");
+        background-repeat: no-repeat;
+      }
+      
+      .c_ant_top {
+        background-image: url("../gfx/ant_top.gif");
+      }
+      
+      .c_ant_bottom {
+        background-image: url("../gfx/ant_bottom.gif");
+      }
+      
+      .c_ant_left {
+        background-image: url("../gfx/ant_left.gif");
+      }
+      
+      .c_ant_right {
+        background-image: url("../gfx/ant_right.gif");
+      }
+      
+      .heading {
+        text-decoration: underline;
+        font-size: 1.5em;
+      }
+      
+      input, select {
+        border: 1px solid #666;
+        background: #000;
+        color: #EDEFE0;
+        
+        margin: 2px;
+        padding: 2px;
+      }
+      
+      input:focus {
+        border: 1px solid #eee;
+      }
+      
+      fieldset {
+        border: 1px solid #BEDF37;
+      }
+      
+      legend {
+        cursor: pointer;
+        text-decoration: underline;
+      }
+      
+      /* config form */
+      #frmwrapper {
+        display: none;
+      }
+      
+      div.sect {
+        clear: both;
+        margin-bottom: 4px;
+      }
+     
+      #frmconfig {
+        width: 400px;
+        margin-bottom: 5px;
+      }
+      
+      #frmconfig label {
+        display: block;
+      }
+      
+      #fdsaddant {
+        display: none;
+        margin-bottom: 8px;
+      }
+      
+      div.sect {
+        clear: both;
+        margin-bottom: 4px;
+      }
+      
+      #fdsaddant div.sect label {
+        width: 160px;
+      }
+      
+      #aheight, #awidth, #antposy, #antposx {
+        width: 25px;
+        text-align: right;
+      }
+      
+      #slider {
+        width: 150px;
+        height: 20px;
+        
+        margin: 2px;
+        padding: 0;
+        border: 1px solid #666;
+      }
+      
+      #knob {
+        width: 6px;
+        height: 18px;
+        background: #fff;
+        border: 1px solid #ccc;
+        cursor: pointer;
+        
+        position: relative;
+      }
+      
+      
+      #footer {
+        border-top: 4px double #8FDF37;
+      }
+     
